@@ -69,7 +69,8 @@ sub summary {
   my $outh = *STDERR; $outh = $fh if ($stdout);
 
   my $this_avg_tlen = sprintf("%.02f",$avg_tlen/$num_tlen);
-  print STDERR "#avg_tlen=$this_avg_tlen\n";
+  print $outh "#inputfile=$inputfile\n";
+  print $outh "#avg_tlen=$this_avg_tlen\n";
   print $outh "SEQ\tread_PE\tscov\ttotal_nuc\tmapped_nuc\tlost_nuc\teffic_pc\n";
   foreach my $cycles (@ranges) {
     print $outh "2x$cycles" . "\t" .
