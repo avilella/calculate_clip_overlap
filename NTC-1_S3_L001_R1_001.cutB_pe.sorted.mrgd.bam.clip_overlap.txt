@@ -1,4 +1,4 @@
-#inputfile=/bi/group/cegx/CEGX_Run113/CEGX_Run113-25578593/NTC_1-29425996/Data/Intensities/BaseCalls/NTC-1_S3_L001_R1_001.cutB_pe.sorted.mrgd.bam
+#inputfile=/foo/bar/NTC_1-29425996/Data/Intensities/BaseCalls/NTC-1_S3_L001_R1_001.cutB_pe.sorted.mrgd.bam
 #avg_tlen=225.89
 SEQ	read_PE	scov	total_nuc	mapped_nuc	lost_nuc	effic_pc
 2x75	279	0.00001	20850	19712	1482	92.89
