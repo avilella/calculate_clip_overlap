@@ -1,5 +1,5 @@
 #!/usr/bin/perl
-my $version = '1.0';
+my $version = '1.0.1';
 use strict;
 use warnings;
 use Getopt::Long;
