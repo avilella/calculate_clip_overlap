@@ -1,4 +1,5 @@
 #!/usr/bin/perl
+my $version = '1.0';
 use strict;
 use warnings;
 use Getopt::Long;
@@ -13,6 +14,8 @@ my $genome_size = 3000000000;
 my $range = "75:100:125:150:250";
 my $tag = 'clip_overlap';
 my $obs = '2x75';
+my $print_version;
+
 GetOptions(
 	   'i|input|inputfile:s' => \$inputfile,
 	   'iter:s'              => \$iter,
@@ -22,8 +25,14 @@ GetOptions(
 	   'obs|observed:s'      => \$obs,
            'debug'    => \$debug,
            'verbose'  => \$verbose,
+           'version'  => \$print_version,
 	   'simulate' => \$simulate,
           );
+
+if ($print_version) {
+  print "$version\n";
+  exit(0);
+}
 
 $cmd = "samtools view $inputfile |";
 my $stats;
